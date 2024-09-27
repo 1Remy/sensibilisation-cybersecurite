@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rançongiciel - Votre ordinateur est bloqué</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .alert-box {
+            background-color: white;
+            border: 2px solid red;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .alert-box h1 {
+            color: red;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .alert-box p {
+            color: #333;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .alert-box .danger {
+            color: red;
+            font-weight: bold;
+        }
+
+        .alert-box button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .alert-box button:hover {
+            background-color: darkred;
+        }
+
+        .alert-box .footer {
+            color: #888;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="alert-box">
+    <h1>Votre ordinateur est bloqué</h1>
+    <p><span class="danger">Pour débloquer votre ordinateur, vous devez payer une somme de 500 €.</span></p>
+    <p>Veuillez effectuer le paiement dans les 24 heures pour éviter la perte de vos données.</p>
+    <button onclick="showMessage()">Payer maintenant</button>
+    <p class="footer">Pour assistance, contactez-nous au 08 92 15 16 17.</p>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Ceci est une fausse alerte. Ne payez jamais dans ce type de situation.");
+    }
+</script>
+
+</body>
+</html>

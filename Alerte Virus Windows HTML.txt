@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerte Virus Windows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .alert-box {
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .alert-box img {
+            width: 80px;
+        }
+
+        .alert-box h1 {
+            color: #0078D7;
+            font-size: 22px;
+            margin: 20px 0 10px;
+        }
+
+        .alert-box p {
+            color: #333;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .alert-box .danger {
+            color: red;
+            font-weight: bold;
+        }
+
+        .alert-box button {
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .alert-box button:hover {
+            background-color: #005bb5;
+        }
+
+        .alert-box .footer {
+            color: #888;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        .alert-box .attention {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="alert-box">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Windows_logo_-_2021.svg" alt="Windows 10 Logo">
+    <h1>Alerte Virus</h1>
+    <p><span class="danger">Un virus dangereux a été détecté sur votre ordinateur !</span></p>
+    <p>Votre système est en danger. Veuillez suivre les instructions pour le protéger.</p>
+    <button onclick="showMessage()">Analyser maintenant</button>
+    <p class="footer">Veuillez contacter notre support technique au 03 14 15 92 65 pour résoudre ce problème.</p>
+    <div class="attention">Attention : Virus détecté</div>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Ceci est une fausse alerte pour sensibiliser aux arnaques.");
+    }
+</script>
+
+</body>
+</html>
